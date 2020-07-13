@@ -208,7 +208,7 @@ class LayerpaymentValidationModuleFrontController extends ModuleFrontController
 
         return array(                       
             'Content-Type: application/json',                                 
-            'Authorization: Bearer '.$this->layerpayment_accesskey.':'.$this->secretkey,
+            'Authorization: Bearer '.$this->layerpayment_accesskey.':'.$this->layerpayment_secretkey,
             'X-O-Timestamp: '.$time_stamp
         );
 
