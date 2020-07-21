@@ -407,7 +407,7 @@ class layerpayment extends PaymentModule
 
         return array(                       
             'Content-Type: application/json',                                 
-            'Authorization: Bearer '.$this->layerpayment_accesskey.':'.$token,
+            'Authorization: Bearer '.$this->layerpayment_accesskey.':'.$this->layerpayment_secretkey,
             'X-O-Timestamp: '.$time_stamp
         );
 
